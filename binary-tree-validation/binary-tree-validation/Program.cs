@@ -5,6 +5,20 @@ namespace binary_tree_validation
 {
     class Program
     {
+        static void Main(string[] args)
+        {
+            var inputArrays = new List<List<int>>()
+            {
+                new List<int>{ 1,3,4,2 },
+                new List<int>{ 3,2,1,5,4,6 },
+                new List<int>{ 1,3,2 }
+
+            };
+            
+            TreeMethods.Master(inputArrays);
+        }
+
+
         public class Tree
         {
             public class TreeNode
@@ -103,17 +117,6 @@ namespace binary_tree_validation
 
             }
         }
-        static void Main(string[] args)
-        {
-            var inputArrays = new List<List<int>>()
-            {
-                new List<int>{ 1,3,4,2 },
-                new List<int>{ 3,2,1,5,4,6 },
-                new List<int>{ 1,3,2 }
 
-            };
-            TreeMethods.Master(inputArrays);
-            Console.WriteLine("Hello World!");
-        }
     }
 }
